@@ -3,7 +3,7 @@
   var player = document.getElementById('player');
   if (player) {
     var base = player.src.split('?')[0];
-    document.querySelectorAll('.ts a[data-sec]').forEach(function (a) {
+    document.querySelectorAll('.ts a[data-sec], .qa-jump[data-sec]').forEach(function (a) {
       a.addEventListener('click', function (e) {
         e.preventDefault();
         player.src = base + '?rel=0&autoplay=1&start=' + a.dataset.sec;
