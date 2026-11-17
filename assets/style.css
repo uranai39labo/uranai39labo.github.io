@@ -131,6 +131,8 @@ details p { margin-top: 8px; color: var(--muted); }
 .ts a { display: grid; grid-template-columns: 5.2em minmax(0, 1fr); gap: 10px; padding: 6px 8px; border-radius: 8px; text-decoration: none; color: var(--ink); }
 .ts a:hover { background: var(--gold-soft); }
 .ts .t { font-variant-numeric: tabular-nums; color: var(--gold-ink); font-weight: 700; }
+.ts-part { margin: 18px 0 6px; font-size: 15px; }
+.ts-part:first-of-type { margin-top: 4px; }
 .keys, .outline { margin: 0; padding-left: 1.3em; display: grid; gap: 6px; }
 .keys b { display: block; color: var(--navy); }
 .check { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }

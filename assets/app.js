@@ -6,7 +6,8 @@
     document.querySelectorAll('.ts a[data-sec], .qa-jump[data-sec]').forEach(function (a) {
       a.addEventListener('click', function (e) {
         e.preventDefault();
-        player.src = base + '?rel=0&autoplay=1&start=' + a.dataset.sec;
+        var src = a.dataset.video ? base.replace(/[^/]+$/, a.dataset.video) : base;
+        player.src = src + '?rel=0&autoplay=1&start=' + a.dataset.sec;
         player.scrollIntoView({ behavior: 'smooth', block: 'center' });
       });
     });
